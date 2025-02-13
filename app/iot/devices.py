@@ -6,8 +6,7 @@ from .message import MessageType
 TIME_TO_SLEEP = 0.5
 
 
-# of course this code looks dumb,
-# but imagine some real implementations of each method here
+# of course this code looks dumb, but imagine some real implementations of each method here
 class HueLightDevice:
     def connect(self) -> None:
         print("Connecting Hue Light.")
@@ -21,8 +20,7 @@ class HueLightDevice:
 
     def send_message(self, message_type: MessageType, data: str = "") -> None:
         print(
-            f"Hue Light handling message of type {message_type.name} ",
-            f"with data [{data}].",
+            f"Hue Light handling message of type {message_type.name} with data [{data}]."
         )
         time.sleep(TIME_TO_SLEEP)
         print("Hue Light received message.")
@@ -41,8 +39,7 @@ class SmartSpeakerDevice:
 
     def send_message(self, message_type: MessageType, data: str = "") -> None:
         print(
-            f"Smart Speaker handling message of type {message_type.name} ",
-            f"with data [{data}].",
+            f"Smart Speaker handling message of type {message_type.name} with data [{data}]."
         )
         time.sleep(TIME_TO_SLEEP)
         print("Smart Speaker received message.")
@@ -61,8 +58,7 @@ class SmartToiletDevice:
 
     def send_message(self, message_type: MessageType, data: str = "") -> None:
         print(
-            f"Smart Toilet handling message of type {message_type.name} "
-            f"with data [{data}]."
+            f"Smart Toilet handling message of type {message_type.name} with data [{data}]."
         )
         time.sleep(TIME_TO_SLEEP)
         print("Smart Toilet received message.")
